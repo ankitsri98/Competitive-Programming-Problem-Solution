@@ -22,4 +22,5 @@ long int maxi(long int n){
 int main() {
     long int n;cin>>n;
     cout<<maxi(n);
+
 }
