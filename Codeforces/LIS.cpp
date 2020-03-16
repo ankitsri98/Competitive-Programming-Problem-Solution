@@ -3,7 +3,7 @@ using namespace std;
 
 int lis(int* arr,int* dp,int n){
     for(int i=2;i<=n;i++){
-        int best=1;//remember this case
+        int best=1;//remember this case as minimum length is 1 having single element 
         for(int j=1;j<=i;j++){
             if(arr[i]>arr[j]){
                 best=max(best,dp[j]+1);
@@ -12,7 +12,7 @@ int lis(int* arr,int* dp,int n){
         dp[i]=best;
     }
     int m=-1;
-    for(int i=1;i<=n;i++){
+    for(int i=1;i<=n;i++){//every index stores length of LIS ending at that index so now traverse to fnd maximum
         cout<<dp[i]<<" ";
         if(dp[i]>m){
             m=dp[i];
