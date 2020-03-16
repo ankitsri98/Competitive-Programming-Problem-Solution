@@ -3,7 +3,7 @@ using namespace std;
 
 int lis(int* arr,int* dp,int n){
     for(int i=2;i<=n;i++){
-        int best=0;
+        int best=1;//remember this case
         for(int j=1;j<=i;j++){
             if(arr[i]>arr[j]){
                 best=max(best,dp[j]+1);
