@@ -12,7 +12,7 @@ int lis(int* arr,int* dp,int n){
         dp[i]=best;
     }
     int m=-1;
-    for(int i=1;i<=n;i++){//every index stores length of LIS ending at that index so now traverse to fnd maximum
+    for(int i=1;i<=n;i++){//every index stores length of LIS ending at that index so now traverse to fnd  maximum
         cout<<dp[i]<<" ";
         if(dp[i]>m){
             m=dp[i];
