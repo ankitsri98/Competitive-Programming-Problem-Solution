@@ -11,6 +11,7 @@ int main() {
 		x=0;m=s=e=ss=0;
 		cin>>n;
 		ll a[n+1];
+		
 		for(int i=0;i<n;i++)
 		{
 			cin>>a[i];
